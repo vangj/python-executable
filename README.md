@@ -94,7 +94,7 @@ Note the following heartaches.
 
 # References
 
-This project demonstration was kludge from the University of [The Internets](https://en.wikipedia.org/wiki/Internets). 
+This project demonstration was kludged from the University of [The Internets](https://en.wikipedia.org/wiki/Internets). 
 
 * [PyInstaller loads script multiple times](https://stackoverflow.com/questions/32672596/pyinstaller-loads-script-multiple-times)
 * [Issue 3907](https://github.com/pyinstaller/pyinstaller/issues/3907)
