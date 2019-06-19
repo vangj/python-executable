@@ -1,0 +1,9 @@
+name: python-executable
+channels:
+  - anaconda
+dependencies:
+  - python=3.7
+  - pip:
+      - joblib==0.11
+      - scikit-learn
+      - pyinstaller
