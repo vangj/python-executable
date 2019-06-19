@@ -11,7 +11,7 @@ setup(
     description='Just do it!',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://github.com/bechtel/my-app',
+    url='https://github.com/vangj/python-executable',
     author='Jee Vang',
     author_email='vangjee@gmail.com',
     license='MIT',
