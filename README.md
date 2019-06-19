@@ -86,7 +86,7 @@ I can't believe it, but, on Windows, `PyInstaller` worked without a hiccup! +1 f
 # Notes
 Note the following heartaches.
 
-* `joblib` is the main culprit behind your distributed executable file running over and over. The Internets cite `multiprocessing` as the culprit, but only after downgrading `joblib` did I get stable behavior.
+* `joblib` is the main culprit behind your distributed executable file running over and over. The [Internets](https://en.wikipedia.org/wiki/Internets) cite `multiprocessing` as the culprit, but only after downgrading `joblib` did I get stable behavior.
 * You cannot expect PyInstaller to work without some manual steps across Windows, Mac and Linux (as you can see from the above). 
 * Notice the `hook-sklearn.py` file? PyInstaller attempts to intelligently and efficiently map out your dependencies and includes them in the final executable distribution. However, in some cases, the dependency heuristic algorithm fails and you need to help PyInstaller pull in the dependencies. The best practice I've seen is to create a `hook-*.py` file for each module (package). In this example, we're helping PyInstaller pull in transitive (or hidden) dependencies from `scikit-learn`. 
 * `onedir` vs `onefile` point of view. PyInstaller recommends `onedir` for easier debugging and `onefile` to remove cognitive load on your intended users. I have noticed that `onedir` is faster to execute; I suspect that `onefile` being a big file bundling all your dependencies have a runtime overhead; email me with the technical explanation if you go that far. You have to pick your poison. ;)
@@ -94,7 +94,7 @@ Note the following heartaches.
 
 # References
 
-This project demonstration was kludge from the University of The Internets. 
+This project demonstration was kludge from the University of [The Internets](https://en.wikipedia.org/wiki/Internets). 
 
 * [PyInstaller loads script multiple times](https://stackoverflow.com/questions/32672596/pyinstaller-loads-script-multiple-times)
 * [Issue 3907](https://github.com/pyinstaller/pyinstaller/issues/3907)
