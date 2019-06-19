@@ -19,8 +19,8 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
     ],
-    packages=['my-app'],
+    packages=['python-executable'],
     include_package_data=True,
     install_requires=[],
-    entry_points={"console_scripts": ["my-app=doit:main"]}
+    entry_points={"console_scripts": ["python-executable=doit:main"]}
 )
