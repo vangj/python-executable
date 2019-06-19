@@ -104,6 +104,10 @@ This project demonstration was kludged from the University of [The Internets](ht
 * [PyInstaller app opens multiple copies in endless loop on osx](https://stackoverflow.com/questions/54942950/pyqt5-pyinstaller-app-opens-multiple-copies-in-endless-loop-on-osx)
 * [PyInstaller error, oserror python library not found](https://stackoverflow.com/questions/43067039/pyinstaller-error-oserror-python-library-not-found-libpython3-4mu-so-1-0-lib)
 
+# Take a Look!
+
+Check out [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin). He's my among my favorite coding gurus.
+
 # Citation
 
 ```
