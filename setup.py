@@ -6,14 +6,14 @@ with open(os.path.join(HERE, "README.md")) as fid:
     README = fid.read()
 
 setup(
-    name='my-app',
+    name='python-executable',
     version='1.0.0',
     description='Just do it!',
     long_description=README,
     long_description_content_type='text/markdown',
     url='https://github.com/bechtel/my-app',
-    author='Team BDAC',
-    author_email='bdac@bechtel.com',
+    author='Jee Vang',
+    author_email='vangjee@gmail.com',
     license='MIT',
     classifiers=[
         "License :: OSI Approved :: MIT License",
