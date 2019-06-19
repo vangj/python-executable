@@ -91,6 +91,7 @@ Note the following heartaches.
 * Notice the `hook-sklearn.py` file? PyInstaller attempts to intelligently and efficiently map out your dependencies and includes them in the final executable distribution. However, in some cases, the dependency heuristic algorithm fails and you need to help PyInstaller pull in the dependencies. The best practice I've seen is to create a `hook-*.py` file for each module (package). In this example, we're helping PyInstaller pull in transitive (or hidden) dependencies from `scikit-learn`. 
 * `onedir` vs `onefile` point of view. PyInstaller recommends `onedir` for easier debugging and `onefile` to remove cognitive load on your intended users. I have noticed that `onedir` is faster to execute; I suspect that `onefile` being a big file bundling all your dependencies have a runtime overhead; email me with the technical explanation if you go that far. You have to pick your poison. ;)
 * You should only run `PyInstaller` once to create the `my-app.spec` (spec file). This first step bootstraps your subsequent build commands as you will then directly modify the spec file and pass it in as a parameter.
+* Notice that the `main` guard is in `cli.py`? That's the recommended pattern. `cli.py` has the main guard so it will be your main entry point. You can then build switching/conditional logic to call other programs; in this case, the `main` method in `doit.py`.
 
 # References
 
